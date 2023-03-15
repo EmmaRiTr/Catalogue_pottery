@@ -3,7 +3,7 @@ These scripts can be used to create a catalogue of archaeological artefacts usin
 
 This work is licensed under Creative Commons Attribution 4.0 (CC-BY-4.0) which means it can be used freely and modified under the condition that it is attributed to its author - Emma Richard-Trémeau. 
 
-![image](https://user-images.githubusercontent.com/118925772/225333584-8971b58f-6a93-4ca0-bbbd-2366d0f3ebef.png)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7737540.svg)](https://doi.org/10.5281/zenodo.7737540)
 
 
 Requirements: 
