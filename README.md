@@ -1,7 +1,9 @@
 # Catalogue_pottery
-Latex code for pottery catalogue entry (archaeology)
+These codes can be used to create a latex catalogue 
 
-These latex codes are minimum examples, creating an one entry catalogue. A bibliography using Harvard referencing is also included. 
+This work is licensed under Creative Commons Attribution 4.0 (CC-BY-4.0) which means it can be used freely and modified under the condition that it is attributed to its author - Emma Richard-Trémeau. 
+
+These latex codes are minimum examples of codes, creating an one entry catalogue. A bibliography using Harvard referencing is also included. 
 These codes were created by Emma Richard-Trémeau as part of the MaltaPot and CoFIPoMS project at the University of Malta. 
 
 These codes are to be used with a latex editor for creating catalogues of archaeological artefacts. The terminology used is for the description of pottery. This catalogue caters for one artefact per page. 
