@@ -1,0 +1,134 @@
+%%%%%%%%
+%Read the README file
+%This is the latex code for the catalogue example 2. 
+%%%%%%%%
+
+
+
+
+\documentclass[12pt]{article}
+
+%%%%%
+%BIBLIOGRAPHY
+%%%%%
+
+%bibliography style, harvard style adapted from the University of Malta Department of Classics and Archaeology requirements. This style can be amended. \usepackage{amsmath}
+\usepackage[style=bath,backend=biber,maxcitenames=2,natbib=true,uniquelist=false,uniquename=false]{biblatex}
+\DeclareDelimFormat[parencite, bib]{nameyeardelim}{\addspace} 
+\renewcommand*{\postnotedelim}{\addcolon\space} 
+\DeclareFieldFormat{postnote}{#1}
+\DeclareFieldFormat{multipostnote}{#1}
+\AtBeginBibliography{\let\mkbibnamefamily\textsc}
+\addbibresource{references.bib} 
+%MAKE SURE A .BIB FILE IS CREATED BEFORE INSERTING THIS COMMAND.
+
+
+
+%%%%%%% 
+%PACKAGES FOR IMAGES AND TABLES
+\usepackage{graphicx} % Required for inserting images
+\usepackage{float}
+\usepackage[table,dvipsnames]{xcolor}
+\usepackage{rotating}
+\graphicspath{ {images/} } %To define correctly image path
+\usepackage[center]{caption}
+\usepackage{subcaption} %necessary for sub-figures
+
+
+%%%%%%%%%%
+%OTHER PACKAGES 
+\usepackage[english]{babel}
+\usepackage{ucs}
+\usepackage{lipsum}
+
+
+
+%%%%%%%%%%
+%PAGE STYLE, inspired by the requirements for MA dissertations by the University of Malta, Department of Classics and Archaeology. Can be amended. 
+\usepackage[a4paper, left=32mm, top=28mm,bottom=20mm]{geometry}
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\fancyfoot[R]{\thepage} %numbering on right hand side corner
+\fancyfoot[L,C]{} %no other information in the foot
+\fancyhead[R]{Name of the catalogue} %nothing in headers
+\setlength{\parindent}{0pt} %remove automatic indent
+\setlength{\parskip}{11pt} 
+\renewcommand\familydefault{\sfdefault} %font
+
+
+%%%%%%%%%%%%
+%Begin the document
+%%%%%%%%%%%%
+
+
+\begin{document}
+%MINIMUM EXAMPLE. 
+%SUGGESTIONS: Make one .tex file per artefact and use the package \import{}{}. A title page, introduction and table of content (toc) can be inserted. 
+
+
+%%%%%%%%%%%%
+%Begin the entry
+%%%%%%%%%%%%
+
+\subsection*{Name} %artefact name. The * makes that the name of the sub-section is not numbered and will not 
+\label{} %choose a label for the section. 
+
+
+%%%%%%%%%%%%
+%Two figures on top of the page
+%%%%%%%%%%%%
+
+\begin{figure}[H] 
+         \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=0.99\textwidth]{example-image-a}
+            %insert image path instead of "example-image-b"
+     \end{subfigure}
+     \hfill
+       \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=0.99\textwidth]{example-image-b}            %insert image path instead of "example-image-b"
+     \end{subfigure} 
+\caption{} %insert general caption for the figure
+\label{} %insert label for the figure
+ %captions and labels can also be inserted for the sub-figures by adding the fields before \end{subfigure}   
+\end{figure}
+
+
+%%%%%%%%%%%%
+%Artefact information
+%%%%%%%%%%%%
+
+\paragraph{Other identifiers and previous publications} %insert names. The field can be changed. 
+
+
+\paragraph{Description}
+\hspace{0.2mm} %ensures the paragraph title is above the table
+
+%Descriptive table starts (fields cane be amended): 
+\begin{table}[h!]
+\begin{tabular}{|>{\columncolor[gray]{0.8}}p{6cm}|p{8cm}|} %column colour and width
+\hline
+Sherd type &  \\ \hline
+Macroscopic Ware classification &    \\ \hline
+Wall thickness &\\ \hline
+Surface treatment &  \\ \hline
+Surfaces Interior &  \\ \hline
+Surfaces Exterior &  \\ \hline
+Core colour	& 	\\ \hline
+Margin colour	& 	\\ \hline
+\end{tabular}
+\caption{Characteristics of } %or any other captions
+\end{table}
+
+
+
+\paragraph{Archaeological context} % or any other information necessary
+
+\lipsum[1-1]
+\clearpage
+%Ensure that all photos and tables get positioned well on the table
+
+\printbibliography %ENSURE YOU HAVE A BIB FILE 
+
+\end{document}
