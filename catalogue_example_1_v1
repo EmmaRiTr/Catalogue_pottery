@@ -1,3 +1,15 @@
+%%%%%%%%
+%Read the README file
+%This is the latex code for the catalogue example 2. 
+%%%%%%%%
+
+
+% @Copyrigths Emma Richard-Trémeau, CC-BY-4.0. This work can be used freely and modified as long as it is attributed. 
+%This catalogue was used for the following MA dissertation Richard-Trémeau, E. (2022) Pottery fabrics from Malta: characterising Late Punic/Early Roman fabrics from the Żejtun Villa and the sanctuary at Tas-Silġ. MA dissertation. University of Malta.
+%For any questions, email: emma.richard-tremeau@um.edu.mt
+
+
+
 \documentclass[12pt]{article}
 
 %%%%%
