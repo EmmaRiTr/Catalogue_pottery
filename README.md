@@ -3,6 +3,9 @@ These codes can be used to create a catalogue of archaeological artefacts using 
 
 This work is licensed under Creative Commons Attribution 4.0 (CC-BY-4.0) which means it can be used freely and modified under the condition that it is attributed to its author - Emma Richard-Trémeau. 
 
+![image](https://user-images.githubusercontent.com/118925772/225333584-8971b58f-6a93-4ca0-bbbd-2366d0f3ebef.png)
+
+
 Requirements: 
 - Latex editor software
 - one main.tex file created
