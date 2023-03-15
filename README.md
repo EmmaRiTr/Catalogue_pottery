@@ -9,7 +9,7 @@ Requirements:
 - one references.bib file created
 - Paths for figures
 
-These latex codes creating an one entry catalogue, one entry per page. A bibliography using Harvard referencing is also included, using the style used by the Department of Classics and Archaeology, University of Malta. This style can be modified. The page set-up and style is also following recommendations for dissertations by the Department of Classics and Archaeology, University of Malta and can be changed.
+These latex codes creating an one entry catalogue, one entry per page. Two PDFs are provided to show the intended results. A bibliography using Harvard referencing is also included, using the style used by the Department of Classics and Archaeology, University of Malta. This style can be modified. The page set-up and style is also following recommendations for dissertations by the Department of Classics and Archaeology, University of Malta and can be changed.
 
 These codes were created as part of the MaltaPot and CoFIPoMS project at the University of Malta. 
 
