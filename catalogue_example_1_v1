@@ -1,0 +1,144 @@
+\documentclass[12pt]{article}
+
+%%%%%
+%BIBLIOGRAPHY
+%%%%%
+
+%bibliography style, harvard style adapted from the University of Malta Department of Classics and Archaeology requirements. This style can be amended. \usepackage{amsmath}
+\usepackage[style=bath,backend=biber,maxcitenames=2,natbib=true,uniquelist=false,uniquename=false]{biblatex}
+\DeclareDelimFormat[parencite, bib]{nameyeardelim}{\addspace} 
+\renewcommand*{\postnotedelim}{\addcolon\space} 
+\DeclareFieldFormat{postnote}{#1}
+\DeclareFieldFormat{multipostnote}{#1}
+\AtBeginBibliography{\let\mkbibnamefamily\textsc}
+\addbibresource{references.bib} 
+%MAKE SURE A .BIB FILE IS CREATED BEFORE INSERTING THIS COMMAND.
+
+
+
+%%%%%%% 
+%PACKAGES FOR IMAGES AND TABLES
+\usepackage{graphicx} % Required for inserting images
+\usepackage{float}
+\usepackage[table,dvipsnames]{xcolor}
+\usepackage{rotating}
+\graphicspath{ {images/} } %To define correctly image path
+\usepackage[center]{caption}
+\usepackage{subcaption} %necessary for sub-figures
+\usepackage{wrapfig}
+
+
+%%%%%%%%%%
+%OTHER PACKAGES 
+\usepackage[english]{babel}
+\usepackage{ucs}
+\usepackage{lipsum}
+
+
+
+%%%%%%%%%%
+%PAGE STYLE, inspired by the requirements for MA dissertations by the University of Malta, Department of Classics and Archaeology. Can be amended. 
+\usepackage[a4paper, left=32mm, top=28mm,bottom=20mm]{geometry}
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\fancyfoot[R]{\thepage} %numbering on right hand side corner
+\fancyfoot[L,C]{} %no other information in the foot
+\fancyhead[R]{Name of the catalogue} %nothing in headers
+\setlength{\parindent}{0pt} %remove automatic indent
+\setlength{\parskip}{11pt} 
+\renewcommand\familydefault{\sfdefault} %font
+
+
+%%%%%%%%%%%%
+%Begin the document
+%%%%%%%%%%%%
+
+
+\begin{document}
+%MINIMUM EXAMPLE. 
+%SUGGESTIONS: Make one .tex file per artefact and use the package \import{}{}. A title page, introduction and table of content (toc) can be inserted. 
+
+
+%%%%%%%%%%%%
+%Begin the entry
+%%%%%%%%%%%%
+
+\subsection*{Name} %artefact name. The * makes that the name of the sub-section is not numbered and will not 
+\label{} %choose a label for the section. 
+
+
+%%%%%%%%%%%%
+%Two figures on top of the page
+%%%%%%%%%%%%
+
+\begin{figure}[H] 
+         \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=0.99\textwidth]{example-image-a}
+            %insert image path instead of "example-image-b"
+     \end{subfigure}
+     \hfill
+       \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=0.99\textwidth]{example-image-b}            %insert image path instead of "example-image-b"
+     \end{subfigure} 
+\caption{} %insert general caption for the figure
+\label{} %insert label for the figure
+ %captions and labels can also be inserted for the sub-figures by adding the fields before \end{subfigure}   
+\end{figure}
+
+
+%%%%%%%%%%%%
+%Artefact drawing and description wrapped around it 
+%%%%%%%%%%%%
+
+
+\begingroup
+\setlength{\intextsep}{1pt} %allows good positioning, can be adjusted
+\setlength{\columnsep}{8pt} %allows good positioning can be adjusted
+
+\begin{wrapfigure}[13]{R}{0.49\textwidth}  %Adjust the [] number to change the number of wrapped line
+    \includegraphics[width=0.49\textwidth]{example-image-c}
+    \caption{Reconstructed vessel} %or any other caption
+    \label{}
+\end{wrapfigure}
+
+\paragraph{Description} %can be changed
+\lipsum[1-1] %fake text
+
+\endgroup
+
+
+
+%%%%%%%%%%
+%Table of colour, read with the Munsell Colour chart
+%%%%%%%%%%
+
+\hspace{2cm} %to adjust positioning of tables, can be removed
+
+\begin{table}[h!]
+\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|} %width and number of columns, can be adjusted
+\hline 
+Internal surface & External surface & Core  & Margins \\ \hline  %or any other necessary 
+& 	& 	& 	  \\ \hline %insert colour values or any other information
+\end{tabular}
+\caption{Munsell colours values} %or any other caption
+\label{}
+\end{table}
+
+
+\begin{table}[]
+\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+\hline
+Macroscopy & OM & PLM & PCA \\ \hline %or any other necessary information
+ & & & \\ \hline %insert data
+\end{tabular}
+\caption{Results of analysis} %or any other necessary information
+\label{}
+\end{table}
+
+\clearpage 
+
+\printbibliography %ENSURE YOU HAVE A BIB FILE 
+
+\end{document}
