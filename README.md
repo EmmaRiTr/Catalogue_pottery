@@ -1,5 +1,5 @@
 # Catalogue_pottery
-These codes can be used to create a latex catalogue 
+These codes can be used to create a catalogue of archaeological artefacts using a latex editor. 
 
 This work is licensed under Creative Commons Attribution 4.0 (CC-BY-4.0) which means it can be used freely and modified under the condition that it is attributed to its author - Emma Richard-Trémeau. 
 
